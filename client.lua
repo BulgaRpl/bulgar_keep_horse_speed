@@ -1,7 +1,8 @@
 CreateThread(function()
     while true do
-		SetPedConfigFlag(PlayerPedId(), 319, false)
-		SetPedConfigFlag(PlayerPedId(), 366, true)
+		-- 0x1913FE4CBF41C463
+		SetPedConfigFlag(PlayerPedId(), 319, false) -- PCF_EnableAsVehicleTransitionDestination
+		SetPedConfigFlag(PlayerPedId(), 366, true) -- PCF_DisableVehicleTransitions
         Wait(100)
     end
 end)
